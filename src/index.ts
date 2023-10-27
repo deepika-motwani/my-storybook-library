@@ -1,3 +1,4 @@
-import Button from "./components/Button";
+import '../src/index.scss';
 
-export { Button };
+export * from "./components/Button";
+export * from "./components/Grid";

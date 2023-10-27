@@ -1,0 +1,137 @@
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  font-size: 16px;
+  font-family: Source Sans Pro; 
+  font-weight: 400; 
+  font-style: normal;
+  line-height: 24px; 
+  word-wrap: break-word;
+  border: none;
+  border-radius: 3px;
+  .button-icon{
+    svg{
+      vertical-align: middle;
+    }
+  }
+  &__medium {
+      &:disabled {
+        background: #F3F3F3;
+        color: #989898;
+        span.button-text {
+          background-color: #F3F3F3;
+          padding: 8px 12px;
+        }
+      }
+      span.button-text {
+        padding: 8px 12px;
+      }
+  }
+  &__large {
+      &:disabled {
+        background: #F3F3F3;
+        color: #989898;
+        span.button-text{
+          background-color: #F3F3F3;         
+        }
+      }
+    span.button-text {
+      padding: 14px 24px;
+    }
+  }
+  &__fullWidth {
+    width: 100%;
+  }
+  &__IconButton{
+    gap: 0;
+  }
+  &__primary {      
+      background: #fff;
+      color: #fff;
+      padding: 1px;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      span.button-text{
+       // padding: 14px 24px;
+        background-color: #01151C;
+        border-radius: 3px;
+        gap: 12px;
+      }
+      &::after {
+        display: none;
+      }
+      &:focus {
+        border: 2px solid #0C7BA1;
+        padding: 1px;
+      }
+  }
+  &__branded-primary {    
+      background: #fff;  
+      color: #01151C;
+      padding: 1px;
+      border: 2px solid transparent;
+      border-radius: 6px;
+      span.button-text {
+        background-color: #AEDCEA;  
+       // padding: 14px 24px;
+        border-radius: 3px; 
+        gap: 12px;
+      }
+      &:focus {
+        padding: 1px;
+        border: 2px solid #0C7BA1;        
+      }
+  }
+  &__secondary {    
+      background: #fff;   
+      color: #01151C; 
+      padding: 1px;
+      border: 2px solid transparent;  
+      border-radius: 6px; 
+      span.button-text{
+        background: #EDF3F4;
+        //padding: 14px 24px;
+        border-radius: 3px;
+        gap: 12px;
+      }
+      &:focus {
+        padding: 1px;
+        border: 2px solid #0C7BA1;
+        
+      }
+  }
+  &__tertiary {      
+      background: none;
+      color: #01151C;
+      padding: 1px;
+      border: 2px solid transparent; 
+      border-radius: 6px;
+      span.button-text{
+        //padding: 14px 24px;
+        border-radius: 3px;
+        gap: 12px;
+      }
+      &:focus {
+        border: 2px solid #0C7BA1;
+        padding: 1px;
+      }
+      &:disabled {
+        background: unset;
+        span {
+          background-color: unset;
+        }
+      }
+  }
+  &__right {
+    .button-icon{
+      margin-left: 10px;
+    }
+  }
+  &__left {
+    .button-icon{
+      margin-right: 10px;
+    }
+  }
+}

@@ -1,39 +1,57 @@
-import React from "react";
+import React, {ButtonHTMLAttributes, DetailedHTMLProps} from "react";
 import classNames from "classnames";
-import "./button.scss";
+import '../Button/Button.module.scss'; 
 
-export interface ButtonProps {
-  type?: "primary" | "secondary" | "branded-primary" | "tertiary";
-  buttonStyle?: "base" | "rounded";
-  textColor?: string;
-  backgroundColor?: string;
-  size?: "medium" | "large";
-  label: string;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+export type ButtonType = "button" | "submit";
+
+export interface IButtonProps extends DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>{
+  variant?: "primary" | "secondary" | "branded-primary" | "tertiary";
+  padding?: "medium" | "large";
+  label?: string;
+  onClick?: (event: React.MouseEvent) => void;
+  isDisabled: boolean | undefined;
+  icon?: React.ReactNode; 
+  isFullWidth?: boolean;
+  iconPosition: 'left' | 'right';
 }
 
-const Button = ({
-  type = "primary",
-  buttonStyle = "base",
-  textColor,
-  backgroundColor,
-  size = "medium",
+const Button: React.FC<IButtonProps> = ({
+  variant = "primary",
+  padding = "medium",
   onClick,
   label,
-}: ButtonProps) => {
+  isDisabled = false,
+  icon,
+  isFullWidth,
+  iconPosition,
+  ...rest
+}: IButtonProps) => {
   return (
     <button
       type="button"
       className={classNames(
+        {
+          btn__Disabled: isDisabled
+        },
         "btn",
-        `btn__${size}`,
-        `btn__${type}`,
-        `btn__${buttonStyle}`
+        `btn__${padding}`,
+        `btn__${variant}`,
+        `btn__${iconPosition}`,
+        {
+          btn__fullWidth: isFullWidth
+        }
+
       )}
-      style={textColor ? { color: textColor } : {}, backgroundColor ? {background: backgroundColor} : {}}
+      disabled={isDisabled}
       onClick={onClick}
+      {...rest}
     >
-      {label}
+      
+      <span className={classNames( "button-text", {btn__fullWidth: isFullWidth})}>
+        {iconPosition === 'left' && icon && <span className="button-icon">{icon}</span>}
+        {label}
+        {iconPosition === 'right' && icon && <span className="button-icon">{icon }</span>}
+      </span>
     </button>
   );
 };
