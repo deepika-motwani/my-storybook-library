@@ -11,7 +11,7 @@ module.exports = {
     name: "@storybook/react-webpack5",
     options: {}
   },
-  // staticDirs: ["../public"],
+  staticDirs: ["../public"],
   resolve: {
     alias: {
       // Check this alias configuration

@@ -3,7 +3,6 @@ import type { Meta, StoryObj } from "@storybook/react";
 import Button from "./Button";
 // import withDesign from '@storybook/addon-designs/';
 import  BtnArrowBlack  from "../icons/BtnArrowBlack";
-import  BtnArrowBlue  from "../icons/BtnArrowBlue";
 
 const meta: Meta<typeof Button> = {
   title: "Components/Button",
@@ -74,10 +73,3 @@ export const ButtonWithIcon: Story = {
   },
 };
 
-// export const IconButton: Story = {
-//   args: {
-//     ...Primary.args,
-//     label: "",
-//     icon: <BtnArrowBlue color={''}/>
-//   },
-// };
