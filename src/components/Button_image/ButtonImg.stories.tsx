@@ -14,7 +14,7 @@ const meta: Meta<typeof ButtonImage> = {
 
   const image = {
     src: btnImg,
-    alt: "btn image"
+    alt: "btn-image"
   }
 
   export const WithImage: Story = {
