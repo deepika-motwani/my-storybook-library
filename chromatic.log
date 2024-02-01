@@ -1,0 +1,74 @@
+
+Chromatic CLI v7.5.4
+https://www.chromatic.com/docs/cli
+
+Authenticating with Chromatic
+    → Connecting to https://index.chromatic.com
+Authenticated with Chromatic
+    → Using project token '****************d6fe'
+Retrieving git information
+‼ Using outdated package
+You are using an outdated version of the Chromatic CLI (v7.5.4).
+A new major version is available (v10.1.0).
+Run yarn upgrade chromatic --latest to upgrade.
+Retrieved git information
+    → Commit '4817902' on branch 'master'; found 1 parent build
+Collecting Storybook metadata
+Collected Storybook metadata
+    → Storybook 7.1.1 for React; using the @storybook/react-webpack5 builder (7.3.1); no supported addons found
+Initializing build
+Initialized build
+    → Build 7 initialized
+Building your Storybook
+    → Running command: yarn run build-storybook --output-dir C:\Users\MANJUN~1.DIN\AppData\Local\Temp\chromatic--1080-GOumd4lhh3iI
+Storybook built in 42 seconds
+    → View build log at C:\storybook\my-storybook-library\build-storybook.log
+Publish your built Storybook
+    → Validating Storybook files
+Publishing your built Storybook
+    → Retrieving target location
+    → Starting publish
+    → [                    ] 0%
+    → [==                  ] 10%
+    → [=====               ] 24%
+    → [======              ] 32%
+    → [=======             ] 36%
+    → [=======             ] 37%
+    → [========            ] 38%
+    → [=========           ] 43%
+    → [=========           ] 46%
+    → [==========          ] 50%
+    → [==========          ] 51%
+    → [===========         ] 54%
+    → [=============       ] 67%
+    → [==============      ] 68%
+    → [==============      ] 69%
+    → [==============      ] 70%
+    → [==============      ] 71%
+    → [==============      ] 72%
+    → [===============     ] 73%
+    → [===============     ] 75%
+    → [===============     ] 76%
+    → [===============     ] 77%
+    → [==================  ] 88%
+    → [==================  ] 89%
+    → [==================  ] 91%
+    → [=================== ] 96%
+    → [====================] 100%
+Publish complete in 13 seconds
+    → View your Storybook at https://653b9e3bcc91acb41fdcdc21-skiowxclcu.chromatic.com
+Verifying your Storybook
+    → This may take a few minutes
+Started build 7
+    → View build details at https://www.chromatic.com/build?appId=653b9e3bcc91acb41fdcdc21&number=7
+Running 8 tests
+    → This may take a few minutes
+    → [===                 ] 1/8  Button › Primary 
+    → [==========          ] 4/8  Button › Tertiary 
+    → [=============       ] 5/8  Button › Button With Icon 
+    → [==================  ] 7/8  Grid › With Ruler 
+× Found 8 visual changes: Review the changes at https://www.chromatic.com/build?appId=653b9e3bcc91acb41fdcdc21&number=7
+
+i For CI/CD use cases, this command failed with exit code 1
+Pass --exit-zero-on-changes to succeed this command regardless of changes.
+Pass --auto-accept-changes to succeed and automatically accept any changes.
