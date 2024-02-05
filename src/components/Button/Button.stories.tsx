@@ -2,7 +2,8 @@ import React from "react";
 import type { Meta, StoryObj } from "@storybook/react";
 import Button from "./Button";
 // import withDesign from '@storybook/addon-designs/';
-import  BtnArrowBlack  from "../icons/BtnArrowBlack";
+// import  BtnArrowBlack  from "../icons/BtnArrowBlack";
+import  BtnArrowBlue  from "../icons/BtnArrowBlue";
 
 const meta: Meta<typeof Button> = {
   title: "Components/Button",
@@ -66,10 +67,11 @@ export const Tertiary: Story = {
 
 export const ButtonWithIcon: Story = {
   args: {
-    ...Secondary.args,
-    label: "Button-With-Icon",
-    iconPosition: 'left',
-    icon: <BtnArrowBlack color={''}/>
+    ...Primary.args,
+    label: "Button",
+    padding: "medium",
+    iconPosition: 'right',
+    icon: <BtnArrowBlue color={''}/>
   },
 };
 
