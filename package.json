@@ -84,10 +84,7 @@
     "babel-jest": "^29.6.4",
     "classnames": "^2.3.2",
     "node-sass": "^9.0.0",
-<<<<<<< HEAD
-    "react-refresh": "^0.14.0"
-=======
+    "react-refresh": "^0.14.0",
     "yarn": "^1.22.19"
->>>>>>> b04b899c01545535667cd08620913b5588cfc471
   }
 }

@@ -4,6 +4,7 @@ import Button from "./Button";
 // import withDesign from '@storybook/addon-designs/';
 // import  BtnArrowBlack  from "../icons/BtnArrowBlack";
 import  BtnArrowBlue  from "../icons/BtnArrowBlue";
+import btnImg from "../../../public/btn_img.svg";
 
 const meta: Meta<typeof Button> = {
   title: "Components/Button",
@@ -25,6 +26,11 @@ const meta: Meta<typeof Button> = {
 export default meta;
 
 type Story = StoryObj<typeof Button>;
+
+const image = {
+  src: btnImg,
+  alt: "btn-image"
+}
 
 export const Primary: Story = {
   args: {
@@ -74,4 +80,8 @@ export const ButtonWithIcon: Story = {
     icon: <BtnArrowBlue color={''}/>
   },
 };
+
+export const WithImage: Story = {
+  render: () => <img src={image.src} alt={image.alt}/>
+}
 
