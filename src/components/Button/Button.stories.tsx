@@ -72,16 +72,17 @@ export const Tertiary: Story = {
 };
 
 export const ButtonWithIcon: Story = {
-  args: {
-    ...Primary.args,
-    label: "Button",
-    padding: "medium",
-    iconPosition: 'right',
-    icon: <BtnArrowBlue color={''}/>
-  },
+  render: () => <img src={image.src} alt={image.alt}/>
+  // args: {
+  //   ...Primary.args,
+  //   label: "Button",
+  //   padding: "medium",
+  //   iconPosition: 'right',
+  //   icon: <BtnArrowBlue color={''}/>
+  // },
 };
 
-export const WithImage: Story = {
-  render: () => <img src={image.src} alt={image.alt}/>
-}
+// export const WithImage: Story = {
+//   render: () => <img src={image.src} alt={image.alt}/>
+// }
 
