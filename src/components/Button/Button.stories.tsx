@@ -56,12 +56,12 @@ export const BrandedPrimary: Story = {
 };
 
 export const Secondary: Story = {
-  render: () => <img src="/secondary_large.png" alt={image.alt}/>
-  // args: {
-  //   ...Primary.args,
-  //   variant: "secondary",
-  //   label: "Secondary",
-  // },
+  
+  args: {
+    ...Primary.args,
+    variant: "secondary",
+    label: "Secondary",
+  },
 };
 
 export const Tertiary: Story = {
@@ -74,13 +74,14 @@ export const Tertiary: Story = {
 
 export const ButtonWithIcon: Story = {
   // render: () => <img src={image.src} alt={image.alt}/>
-  args: {
-    ...Primary.args,
-    label: "Button",
-    padding: "medium",
-    iconPosition: 'right',
-    icon: <BtnArrowBlue color={''}/>
-  },
+  render: () => <img src="/secondary_large.png" alt={image.alt}/>
+  // args: {
+  //   ...Primary.args,
+  //   label: "Button",
+  //   padding: "large",
+  //   iconPosition: 'right',
+  //   icon: <BtnArrowBlue color={''}/>
+  // },
 };
 
 
