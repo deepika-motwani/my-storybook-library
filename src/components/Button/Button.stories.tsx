@@ -56,11 +56,12 @@ export const BrandedPrimary: Story = {
 };
 
 export const Secondary: Story = {
-  args: {
-    ...Primary.args,
-    variant: "secondary",
-    label: "Secondary",
-  },
+  render: () => <img src="/secondary_large.png" alt={image.alt}/>
+  // args: {
+  //   ...Primary.args,
+  //   variant: "secondary",
+  //   label: "Secondary",
+  // },
 };
 
 export const Tertiary: Story = {
@@ -82,7 +83,4 @@ export const ButtonWithIcon: Story = {
   },
 };
 
-// export const WithImage: Story = {
-//   render: () => <img src={image.src} alt={image.alt}/>
-// }
 
