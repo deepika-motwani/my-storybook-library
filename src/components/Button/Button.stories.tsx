@@ -76,7 +76,7 @@ export const ButtonWithIcon: Story = {
   // render: () => <img src={image.src} alt={image.alt}/>
   //render: () => <img src="/secondary_large.png" alt={image.alt}/>
   args: {
-    ...Primary.args,
+    ...Secondary.args,
     label: "Button",
     padding: "large",
     iconPosition: 'right',
