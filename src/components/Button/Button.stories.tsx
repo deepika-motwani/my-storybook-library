@@ -75,7 +75,7 @@ export const ButtonWithIcon: Story = {
   args: {
     ...Primary.args,
     label: "Button",
-    padding: "medium",
+    padding: "large",
     iconPosition: 'right',
     icon: <BtnArrowBlue color={''}/>
   },
